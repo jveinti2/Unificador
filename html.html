@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/public/css/styles2.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+
+
+                <div class="col s4" onclick="buscarDatos(<?= $campos['id_ofertas'] ?>,'<?= $_POST['estrato'] ?>')">
+                    <a href="#section-benchmark" style="color :black">
+
+
+                        <div class="">
+                            <div class="card-content">
+                                <div class="style-title-card">
+                                    <span class="card-title"> <strong>
+                                            LA MEJOR OFERTA PARA TU COMISIÓN
+                                        </strong><i class="material-icons">star</i>
+                                    </span>
+                                    <div class="center" style="margin-top: 1.4em;">
+                                        <button class=" btn-lf waves-effect waves-light btn-small">Detalle</button>
+                                        <button class=" btn-rg waves-effect waves-light btn-small">benchmark</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <table class=" card">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <?= $campos['Oferta'] ?>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p><strong>Tarifa Final</strong></p>
+                                                    <?= $tarifaFinal ?>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p><strong>Descuento</strong></p>
+                                                    <?= $descuento ?>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p><strong>Tarifa Plena</strong></p>
+                                                    <?= $tarifaPlena ?>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.style-title-card {
+    height: 9em;
+    padding: 5px 10px 5px 10px;
+    background-color: #001950;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.style-title-card strong {
+    font-size: 20px;
+}
+
+.style-title-card .btn-lf {
+    width: 9em;
+    background-color: #F7D074;
+    color: #000;
+}
+
+.style-title-card .btn-rg {
+    width: 9em;
+    background-color: #00c8ff;
+    color: #fff;
+}
